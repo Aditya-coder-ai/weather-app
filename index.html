@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Weather App</title>
+</head>
+<body>
+<div class="search-container">
+  <form class="search_form">
+    <div class="search-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for a city..." id="searchInput" />
+    </div>
+  </form>
+</div>
+
+
+  <div class="container">
+    <div class="div1">
+      <dotlottie-player
+        src="https://lottie.host/d41cc621-eb61-48d9-8791-3071f4d59711/TXQxmcOheS.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 100%;"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </div>
+
+    <div class="div2" id="weatherResult">
+      <div class="weather-left">
+        <div class="location"></div>
+        <div class="temp"></div>
+        <div class="condition"></div>
+        <div class="icon"></div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+        <div class="pressure"></div>
+      </div>
+      <div class="weather-right">
+        <div class="forecast-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
